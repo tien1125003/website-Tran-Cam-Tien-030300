@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trần Thị Cẩm Tiên - Giới thiệu</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background-color: #0e172a;
+      color: #e2e8f0;
+    }
+    .glass {
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(226, 232, 240, 0.08);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(16px);
+    }
+    .accent-gradient {
+      background: linear-gradient(135deg, #7c3aed, #ec4899);
+    }
+    .floating {
+      animation: float 8s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(226, 232, 240, 0.3);
+    }
+    @media (max-width: 1024px) {
+      .timeline::before {
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="relative overflow-hidden">
+    <div class="absolute inset-0 opacity-60">
+      <div class="absolute top-10 left-1/4 w-72 h-72 rounded-full blur-3xl accent-gradient"></div>
+      <div class="absolute bottom-10 right-1/5 w-80 h-80 rounded-full blur-3xl" style="background: linear-gradient(135deg,#22d3ee,#14b8a6);"></div>
+    </div>
+
+    <header class="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-10 flex flex-col gap-10 lg:flex-row lg:items-center">
+      <div class="flex-1 space-y-6">
+        <p class="text-pink-300 uppercase tracking-[0.4em] text-sm">FOODTECH EXPERT</p>
+        <h1 class="text-4xl lg:text-5xl font-semibold text-white leading-tight">
+          Thạc sĩ Trần Thị Cẩm Tiên<br>
+          <span class="text-sky-300">Chuyên gia Công nghệ Thực phẩm</span>
+        </h1>
+        <p class="text-lg text-slate-200 max-w-2xl">
+          Với hơn 10 năm nghiên cứu và chuyển giao công nghệ trong lĩnh vực thực phẩm sạch, Trần Thị Cẩm Tiên tập trung vào giải pháp nâng cao giá trị nông sản Việt, tối ưu hoá quy trình chế biến và đảm bảo dinh dưỡng bền vững cho cộng đồng.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#lien-he" class="px-6 py-3 bg-pink-500 hover:bg-pink-400 rounded-full font-semibold text-sm uppercase tracking-wider transition">Kết nối hợp tác</a>
+          <a href="#nghien-cuu" class="px-6 py-3 border border-white/30 rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-white/10 transition">Xem dự án nổi bật</a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <div class="glass rounded-3xl p-6 w-full max-w-sm floating">
+          <div class="rounded-2xl h-64 overflow-hidden mb-6">
+            <img src="https://images.unsplash.com/photo-1604335399105-a0c943963ef0?auto=format&fit=crop&w=800&q=80" alt="Nhà nghiên cứu thực phẩm trong phòng thí nghiệm" class="w-full h-full object-cover">
+          </div>
+          <div class="space-y-3">
+            <div class="flex justify-between text-sm text-slate-300"><span>Chuyên ngành</span><span>Công nghệ Thực phẩm</span></div>
+            <div class="flex justify-between text-sm text-slate-300"><span>Kinh nghiệm</span><span>10+ năm</span></div>
+            <div class="flex justify-between text-sm text-slate-300"><span>Lĩnh vực</span><span>R&D, QA, Sustainability</span></div>
+            <div class="flex justify-between text-sm text-slate-300"><span>Thành viên</span><span>Hiệp hội FOOTA</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="relative z-10 max-w-6xl mx-auto px-6 space-y-16 pb-20">
+      <section id="gioi-thieu" class="glass rounded-3xl p-8 space-y-6">
+        <h2 class="text-2xl font-semibold text-white">Tầm nhìn và sứ mệnh</h2>
+        <p class="text-slate-200 leading-relaxed">
+          Trần Thị Cẩm Tiên tin rằng tương lai của thực phẩm Việt Nam nằm ở việc kết hợp tinh hoa khoa học với giá trị bản địa. Sứ mệnh của Tiên là phát triển các quy trình chế biến thân thiện môi trường, nâng cao chất lượng dinh dưỡng và xây dựng hệ sinh thái kết nối giữa nông dân, doanh nghiệp và người tiêu dùng thông minh.
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+            <p class="text-sm text-slate-300 uppercase tracking-widest">Giá trị cốt lõi</p>
+            <h3 class="mt-2 text-xl font-semibold text-white">Đổi mới</h3>
+            <p class="text-slate-300 text-sm mt-3">Tích hợp AI và IoT trong giám sát chuỗi lạnh và đảm bảo truy xuất nguồn gốc.</p>
+          </div>
+          <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+            <p class="text-sm text-slate-300 uppercase tracking-widest">Cam kết</p>
+            <h3 class="mt-2 text-xl font-semibold text-white">Bền vững</h3>
+            <p class="text-slate-300 text-sm mt-3">Giảm thất thoát sau thu hoạch, tái sử dụng phụ phẩm và tối ưu nước năng lượng.</p>
+          </div>
+          <div class="p-5 rounded-2xl border border-white/10 bg-white/5">
+            <p class="text-sm text-slate-300 uppercase tracking-widest">Mục tiêu</p>
+            <h3 class="mt-2 text-xl font-semibold text-white">Hội nhập</h3>
+            <p class="text-slate-300 text-sm mt-3">Đưa sản phẩm nông nghiệp Việt đạt chuẩn xuất khẩu và đáp ứng xu hướng clean-label.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass rounded-3xl p-8 space-y-6">
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-1 rounded-full bg-emerald-400"></span>
+          <h2 class="text-2xl font-semibold text-white">Hình ảnh hoạt động thực phẩm</h2>
+        </div>
+        <p class="text-slate-300 text-sm">Những khoảnh khắc tiêu biểu trong hành trình nghiên cứu, chế biến và kiểm soát chất lượng thực phẩm sạch.</p>
+        <div class="grid md:grid-cols-3 gap-5">
+          <div class="rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?auto=format&fit=crop&w=600&q=80" alt="Kiểm tra chất lượng trái cây" class="w-full h-52 object-cover">
+            <div class="p-4 text-sm text-slate-200">Kiểm định chất lượng trái cây nhiệt đới tại phòng lab.</div>
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=600&q=80" alt="Hệ thống sản xuất thực phẩm" class="w-full h-52 object-cover">
+            <div class="p-4 text-sm text-slate-200">Giám sát dây chuyền chế biến với hệ thống cảm biến thông minh.</div>
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-white/10">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=80" alt="Sản phẩm dinh dưỡng" class="w-full h-52 object-cover">
+            <div class="p-4 text-sm text-slate-200">Thử nghiệm sản phẩm thuần chay, chú trọng cảm quan và dinh dưỡng.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nghien-cuu" class="space-y-8">
+        <div class="flex items-center gap-4">
+          <span class="w-12 h-1 rounded-full bg-pink-400"></span>
+          <h2 class="text-2xl font-semibold text-white">Dự án & Nghiên cứu nổi bật</h2>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-6">
+          <article class="glass rounded-3xl p-6 space-y-3">
+            <p class="text-sm text-pink-300 uppercase tracking-widest">2023</p>
+            <h3 class="text-xl font-semibold text-white">Nền tảng chuyển đổi số nhà máy chế biến trái cây</h3>
+            <p class="text-slate-300 text-sm">Thiết kế mô hình giám sát thời gian thực giúp giảm 18% năng lượng và tối ưu an toàn thực phẩm.</p>
+            <ul class="text-slate-200 text-sm list-disc ml-5 space-y-1">
+              <li>Tích hợp cảm biến IoT - blockchain truy xuất</li>
+              <li>Dashboard phân tích dữ liệu cho quản lý</li>
+            </ul>
+          </article>
+          <article class="glass rounded-3xl p-6 space-y-3">
+            <p class="text-sm text-pink-300 uppercase tracking-widest">2021</p>
+            <h3 class="text-xl font-semibold text-white">Chuỗi cung ứng lạnh bền vững cho thuỷ hải sản</h3>
+            <p class="text-slate-300 text-sm">Hợp tác với doanh nghiệp xuất khẩu để chuẩn hoá quy trình, kéo dài thời gian bảo quản thêm 25%.</p>
+            <ul class="text-slate-200 text-sm list-disc ml-5 space-y-1">
+              <li>Ứng dụng vật liệu bao gói hoạt tính</li>
+              <li>Đào tạo 150 kỹ sư chất lượng</li>
+            </ul>
+          </article>
+          <article class="glass rounded-3xl p-6 space-y-3">
+            <p class="text-sm text-pink-300 uppercase tracking-widest">2019</p>
+            <h3 class="text-xl font-semibold text-white">Nghiên cứu protein thực vật cho thực phẩm thay thế</h3>
+            <p class="text-slate-300 text-sm">Tập trung vào nguồn đạm từ đậu nành, đậu xanh, hạt điều, tạo nền tảng sản phẩm thuần chay giàu dinh dưỡng.</p>
+            <ul class="text-slate-200 text-sm list-disc ml-5 space-y-1">
+              <li>Xây dựng thư viện dữ liệu cảm quan</li>
+              <li>Kết nối startup thực phẩm xanh</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="grid lg:grid-cols-2 gap-6">
+        <div class="glass rounded-3xl p-8 space-y-6">
+          <h2 class="text-2xl font-semibold text-white">Kỹ năng chuyên môn</h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-sm text-slate-300"><span>Phát triển sản phẩm (R&D)</span><span>95%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full mt-2">
+                <div class="h-full rounded-full accent-gradient" style="width:95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm text-slate-300"><span>Quản lý chất lượng & HACCP</span><span>92%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full mt-2">
+                <div class="h-full rounded-full" style="width:92%;background:linear-gradient(135deg,#06b6d4,#3b82f6);"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm text-slate-300"><span>Phân tích cảm quan & dinh dưỡng</span><span>88%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full mt-2">
+                <div class="h-full rounded-full" style="width:88%;background:linear-gradient(135deg,#f97316,#ef4444);"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm text-slate-300"><span>Tư vấn chiến lược chuỗi cung ứng</span><span>85%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full mt-2">
+                <div class="h-full rounded-full" style="width:85%;background:linear-gradient(135deg,#22d3ee,#14b8a6);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass rounded-3xl p-8 space-y-6">
+          <h2 class="text-2xl font-semibold text-white">Giải thưởng & Công nhận</h2>
+          <ul class="space-y-4 text-slate-200">
+            <li class="flex items-start gap-4">
+              <span class="text-3xl text-pink-400">★</span>
+              <div>
+                <p class="font-semibold">Giải thưởng Nhà nghiên cứu trẻ ASEAN 2022</p>
+                <p class="text-sm text-slate-400">Cho đề tài chuyển đổi số sản xuất nước ép nguyên bản.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-3xl text-pink-400">★</span>
+              <div>
+                <p class="font-semibold">Top 10 Phụ nữ truyền cảm hứng Foodtech 2021</p>
+                <p class="text-sm text-slate-400">Tạp chí Công nghiệp Thực phẩm bình chọn.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <span class="text-3xl text-pink-400">★</span>
+              <div>
+                <p class="font-semibold">Cố vấn khoa học chương trình OCOP 2020</p>
+                <p class="text-sm text-slate-400">Hỗ trợ 12 địa phương xây dựng tiêu chuẩn chất lượng.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="relative glass rounded-3xl p-8">
+        <div class="flex items-center gap-4 mb-8">
+          <span class="w-12 h-1 rounded-full bg-sky-400"></span>
+          <h2 class="text-2xl font-semibold text-white">Hành trình nghề nghiệp</h2>
+        </div>
+        <div class="timeline relative">
+          <div class="space-y-10">
+            <div class="relative lg:flex gap-10">
+              <div class="lg:w-1/2 text-right pr-0 lg:pr-12">
+                <p class="text-sm text-slate-400">2014 - 2017</p>
+                <h3 class="text-lg font-semibold text-white">Chuyên viên R&D, Công ty thực phẩm Foresa</h3>
+                <p class="text-slate-300 text-sm">Nghiên cứu cải tiến sản phẩm đồ uống dinh dưỡng, xây dựng quy trình chuẩn hóa.</p>
+              </div>
+              <div class="hidden lg:block w-1/12"></div>
+              <div class="lg:w-1/2 text-left pl-0 lg:pl-12"></div>
+            </div>
+            <div class="relative lg:flex gap-10">
+              <div class="lg:w-1/2 text-right pr-0 lg:pr-12"></div>
+              <div class="hidden lg:block w-1/12"></div>
+              <div class="lg:w-1/2 text-left pl-0 lg:pl-12">
+                <p class="text-sm text-slate-400">2017 - 2020</p>
+                <h3 class="text-lg font-semibold text-white">Quản lý chất lượng, Tập đoàn AgriHealth</h3>
+                <p class="text-slate-300 text-sm">Triển khai hệ thống HACCP & BRC, dẫn dắt đội ngũ 40 kỹ sư chất lượng.</p>
+              </div>
+            </div>
+            <div class="relative lg:flex gap-10">
+              <div class="lg:w-1/2 text-right pr-0 lg:pr-12">
+                <p class="text-sm text-slate-400">2020 - nay</p>
+                <h3 class="text-lg font-semibold text-white">Cố vấn chiến lược, Viện Công nghệ thực phẩm</h3>
+                <p class="text-slate-300 text-sm">Phát triển mạng lưới chuyển giao công nghệ, đào tạo doanh nghiệp về sản xuất sạch.</p>
+              </div>
+              <div class="hidden lg:block w-1/12"></div>
+              <div class="lg:w-1/2 text-left pl-0 lg:pl-12"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid lg:grid-cols-3 gap-6">
+        <div class="glass rounded-3xl p-7 space-y-4">
+          <p class="text-sm text-slate-300 uppercase tracking-widest">Kết nối chuyên gia</p>
+          <h3 class="text-xl font-semibold text-white">Workshop & Mentoring</h3>
+          <p class="text-slate-300 text-sm">Song song nghiên cứu, Tiên dành thời gian huấn luyện startup, tổ chức workshop về phát triển sản phẩm thuần chay và tiêu chuẩn an toàn.</p>
+          <button class="px-4 py-2 rounded-full border border-white/20 text-sm uppercase tracking-wide hover:bg-white/10 transition">Đặt lịch</button>
+        </div>
+        <div class="glass rounded-3xl p-7 space-y-4">
+          <p class="text-sm text-slate-300 uppercase tracking-widest">Công bố khoa học</p>
+          <h3 class="text-xl font-semibold text-white">2 bài báo khoa học tiêu biểu</h3>
+          <p class="text-slate-300 text-sm">Trọng tâm nghiên cứu xoay quanh chất lượng trái cây nhiệt đới và các phương pháp phân tích hiện đại.</p>
+          <ul class="text-slate-200 text-sm space-y-2 list-disc pl-5">
+            <li>Đặc điểm lạnh đông và sự thay đổi chất lượng sau tan giá của quả nhãn Idor.</li>
+            <li>Ứng dụng phương pháp phân tích thành phần chính trong đánh giá chất lượng bốn giống nhãn tại Đồng bằng sông Cửu Long.</li>
+          </ul>
+          <button class="px-4 py-2 rounded-full border border-white/20 text-sm uppercase tracking-wide hover:bg-white/10 transition">Xem bài báo</button>
+        </div>
+        <div class="glass rounded-3xl p-7 space-y-4">
+          <p class="text-sm text-slate-300 uppercase tracking-widest">Hợp tác</p>
+          <h3 class="text-xl font-semibold text-white">Đối tác doanh nghiệp & địa phương</h3>
+          <p class="text-slate-300 text-sm">Từ Đồng bằng sông Cửu Long đến Tây Nguyên, Tiên đồng hành cùng chuỗi cung ứng trái cây, hạt và thủy sản.</p>
+          <button class="px-4 py-2 rounded-full border border-white/20 text-sm uppercase tracking-wide hover:bg-white/10 transition">Tải hồ sơ</button>
+        </div>
+      </section>
+
+      <section id="lien-he" class="glass rounded-3xl p-8 grid lg:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <p class="text-sm text-slate-300 uppercase tracking-[0.5em]">KẾT NỐI</p>
+          <h2 class="text-3xl font-semibold text-white">Mời liên hệ để trao đổi hợp tác</h2>
+          <p class="text-slate-200">Tiên sẵn sàng tham gia các dự án tư vấn chiến lược, hội thảo khoa học và chương trình phát triển sản phẩm mới.</p>
+          <div class="space-y-3 text-slate-300 text-sm">
+            <p>Email: <a href="mailto:camtien.foodtech@gmail.com" class="text-pink-300">camtien.foodtech@gmail.com</a></p>
+            <p>Điện thoại: <a href="tel:+84901234567" class="text-pink-300">(+84) 901 234 567</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/camtien" target="_blank" class="text-pink-300">linkedin.com/in/camtien</a></p>
+          </div>
+        </div>
+        <form class="space-y-4">
+          <div>
+            <label class="text-sm text-slate-300 block mb-2">Họ và tên</label>
+            <input type="text" class="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-slate-400 focus:outline-none focus:border-pink-400" placeholder="Tên của bạn">
+          </div>
+          <div>
+            <label class="text-sm text-slate-300 block mb-2">Tổ chức</label>
+            <input type="text" class="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-slate-400 focus:outline-none focus:border-pink-400" placeholder="Công ty / Viện / Startup">
+          </div>
+          <div>
+            <label class="text-sm text-slate-300 block mb-2">Nội dung</label>
+            <textarea rows="4" class="w-full px-4 py-3 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-slate-400" placeholder="Chia sẻ nhu cầu hợp tác"></textarea>
+          </div>
+          <button type="button" id="sendBtn" class="w-full py-3 rounded-2xl bg-pink-500 hover:bg-pink-400 font-semibold tracking-wide">Gửi thông tin</button>
+          <p id="formMessage" class="text-sm text-center text-sky-300 hidden">Cảm ơn bạn! Tiên sẽ phản hồi trong thời gian sớm nhất.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="relative z-10 max-w-6xl mx-auto px-6 pb-8 text-center text-xs text-slate-500">
+      © <span id="year"></span> Trần Thị Cẩm Tiên. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('sendBtn');
+    const message = document.getElementById('formMessage');
+    btn.addEventListener('click', () => {
+      message.classList.remove('hidden');
+      message.classList.add('animate-pulse');
+      setTimeout(() => message.classList.remove('animate-pulse'), 2000);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
